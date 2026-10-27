@@ -65,7 +65,11 @@ javac -encoding UTF-8 -d bin $(find src -name "*.java")
 java -cp bin Panel.MainForm
 ```
 
-也可以用 Eclipse 直接匯入專案（File → Import → Existing Projects into Workspace）。
+### 使用 IntelliJ IDEA
+
+1. File → Open，選擇專案資料夾，出現提示時選擇以 Eclipse 專案匯入
+2. File → Project Structure → Project，SDK 選 JDK 21 以上
+3. 執行 `src/Panel/MainForm.java` 的 `main`；要帶啟動參數時，在 Run → Edit Configurations 的 Program arguments 填入（例如 `-bfs -debug`）
 
 ### 啟動參數
 
